@@ -1,0 +1,161 @@
+{
+  "pageSections": [],
+  "removedItems": {
+    "cadbury-dairy-milk": {
+      "stills": [
+        "media/ogilvy-cadbury-story-of-us-zoya-akhtar/stills/vday_f1136.png",
+        "media/ogilvy-cadbury-story-of-us-zoya-akhtar/stills/vday_f2108.png"
+      ],
+      "animatics": [
+        "animatic, 15s cut",
+        "animatic, 30s cut"
+      ]
+    }
+  },
+  "hiddenSections": {
+    "cadbury-dairy-milk": []
+  },
+  "conceptImages": [
+    {
+      "id": "c_mu81xvqfd0azs",
+      "kind": "image",
+      "src": "media/concept/workflow_concept_to_composite_hd.png",
+      "caption": "Concept to composite, start to final frame · flux.2 klein"
+    },
+    {
+      "id": "c_mu84i4p3li8cf",
+      "kind": "image",
+      "src": "media/concept/workflow_qwen_2511_multiangle_hd.png",
+      "caption": "Multi-angle control, one reference, many angles · qwen edit 2511"
+    },
+    {
+      "id": "c_mu85smno0zk1o",
+      "kind": "image",
+      "src": "media/concept/workflow_sofa_color_change_hd.png",
+      "caption": "Colorway change, sofa edit in place · qwen edit 2511"
+    },
+    {
+      "id": "c_mu8exngygx2jh",
+      "kind": "image",
+      "src": "media/concept/workflow_lighting_control_hd.png",
+      "caption": "Lighting control, relight, same product · qwen edit 2511 + lighting LoRA"
+    },
+    {
+      "id": "c_mu989jdonyh8p",
+      "kind": "image",
+      "src": "media/concept/workflow_flux2_klein_upscale_ttp_hd.png",
+      "caption": "2× tile upscale, resolution, not artifacts · flux.2 klein TTP"
+    },
+    {
+      "id": "c_mu98wk1t7tfzq",
+      "kind": "image",
+      "src": "media/concept/workflow_flux2_klein_upscale_4k_hd.png",
+      "caption": "Upscale to 4K, low-res in, production out · flux.2 klein TTP"
+    },
+    {
+      "id": "c_mu9xnisrd035z",
+      "kind": "image",
+      "src": "media/concept/photoshoot_tote_lifestyle_hd.png",
+      "caption": "Lifestyle set, one tote, six cafe scenes",
+      "group": "photos"
+    },
+    {
+      "id": "c_mu9xnitfase1n",
+      "kind": "image",
+      "src": "media/concept/photoshoot_sleepwear_set_hd.png",
+      "caption": "Sleepwear set, six poses, studio to bed",
+      "group": "photos"
+    },
+    {
+      "id": "c_mu9y3sh2mo8gg",
+      "kind": "image",
+      "src": "media/concept/photoshoot_fitness_bottle_hd.png",
+      "caption": "Gym still, matte bottle and dumbbells, low-key light",
+      "group": "photos"
+    },
+    {
+      "id": "c_mu9y3sjrt4tx4",
+      "kind": "image",
+      "src": "media/concept/photoshoot_cream_jar_hd.png",
+      "caption": "Skincare still, levitating jar and aloe, pastel pink",
+      "group": "photos"
+    },
+    {
+      "id": "c_mu9y3smt366he",
+      "kind": "image",
+      "src": "media/concept/photoshoot_perfume_gift_hd.png",
+      "caption": "Fragrance still, boxed bottle, teal ribbon, moody light",
+      "group": "photos"
+    },
+    {
+      "id": "c_mu9y3spifh1hz",
+      "kind": "image",
+      "src": "media/concept/photoshoot_duffel_hero_hd.png",
+      "caption": "Bag hero, canvas weekender, hard window light",
+      "group": "photos"
+    }
+  ],
+  "removedMedia": [
+    "media/image-system/pipeline/product.jpg",
+    "media/image-system/pipeline/reference.jpg",
+    "media/image-system/pipeline/generation.jpg",
+    "media/image-system/pipeline/compositing.jpg",
+    "media/image-system/pipeline/final.jpg",
+    "media/image-system/pipeline/lighting.jpg",
+    "media/image-system/assets/studio-hero.jpg",
+    "media/image-system/assets/bedroom-lifestyle.jpg",
+    "media/image-system/assets/wide-room.jpg",
+    "media/image-system/assets/product-page.jpg",
+    "media/image-system/assets/social.jpg",
+    "media/image-system/assets/mobile.jpg",
+    "media/image-system/assets/detail.jpg",
+    "media/ecommerce-image-system/desktop-hero.jpg",
+    "media/ecommerce-image-system/desktop-lifestyle.jpg",
+    "media/ecommerce-image-system/desktop-detail.jpg",
+    "media/ecommerce-image-system/thumb-01.jpg",
+    "media/ecommerce-image-system/mobile-hero.jpg",
+    "media/ecommerce-image-system/thumb-04.jpg",
+    "media/ecommerce-image-system/thumb-03.jpg",
+    "media/ecommerce-image-system/thumb-02.jpg",
+    "media/mattress-hero-studio/cover.jpg",
+    "media/mattress-hero-studio/stills/05-final-hero.jpg",
+    "media/mattress-hero-studio/stills/01-product.jpg",
+    "media/mattress-hero-studio/stills/02-extraction.jpg",
+    "media/mattress-hero-studio/stills/03-environment.jpg",
+    "media/mattress-hero-studio/stills/04-lighting.jpg",
+    "media/mattress-hero-studio/stills/06-angle.jpg",
+    "media/bedroom-lifestyle-comp/cover.jpg",
+    "media/bedroom-lifestyle-comp/stills/05-final.jpg",
+    "media/bedroom-lifestyle-comp/stills/06-wide.jpg",
+    "media/bedroom-lifestyle-comp/stills/07-three-quarter.jpg",
+    "media/bedroom-lifestyle-comp/stills/08-dusk.jpg",
+    "media/bedroom-lifestyle-comp/stills/04-light.jpg",
+    "media/bedroom-lifestyle-comp/stills/02-environment.jpg",
+    "media/bedroom-lifestyle-comp/stills/01-product-ref.jpg",
+    "media/bedroom-lifestyle-comp/stills/03-perspective.jpg",
+    "media/reference-controlled-imaging/cover.jpg",
+    "media/reference-controlled-imaging/stills/var-premium.jpg",
+    "project:bedroom-lifestyle-comp",
+    "project:sleep-brand-image-system",
+    "project:reference-controlled-imaging",
+    "project:ecommerce-image-system",
+    "media/reel/showreel-2026.mp4"
+  ],
+  "stamp": 1789916559894,
+  "removedProjects": [
+    "commercial-creative-system",
+    "mattress-hero-studio"
+  ],
+  "additions": {
+    "showcase": [
+      {
+        "kind": "video",
+        "label": "lip gloss · concept ad",
+        "src": "media/added/showcase/amu97apbp-product-shot-concept-ad.mp4",
+        "tag": "concept-ad",
+        "note": "Product-shot beauty concept: model open, macro application, glossy finish.",
+        "poster": "media/added/showcase/amu97apbp-product-shot-concept-ad-poster.jpg"
+      }
+    ]
+  }
+}
