@@ -597,7 +597,7 @@ const HOME_EXTRAS: { group: string; items: [string, string][] }[] = [
   {
     group: 'Site files',
     items: [
-      ['media/image-system/og.jpg', 'social share image (og.jpg)'],
+      ['media/image-system/og-hero.jpg', 'social share image (1200x630)'],
       ['media/resume/Syed-Abdul-Wasay-Ali-Resume.pdf', 'resume PDF'],
     ],
   },
