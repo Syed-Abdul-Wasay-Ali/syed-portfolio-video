@@ -66,6 +66,7 @@ export const UI_GROUPS: TextGroup[] = [
       { k: 'nav.concepts', label: 'nav, editing', def: 'Editing' },
       { k: 'nav.work', label: 'nav, work', def: 'Work' },
       { k: 'nav.showcase', label: 'nav, showcase', def: 'Showcase' },
+      { k: 'nav.character', label: 'nav, character', def: 'Character' },
       { k: 'nav.systems', label: 'nav, systems', def: 'Systems' },
       { k: 'nav.workflows', label: 'nav, workflows', def: 'Workflows' },
       { k: 'nav.brands', label: 'nav, brands', def: 'Brands' },
@@ -134,7 +135,7 @@ export const UI_GROUPS: TextGroup[] = [
     id: 'whatibuild',
     label: 'Home, what i solve',
     fields: [
-      { k: 'whatibuild.tag', label: 'eyebrow', def: '03 / what i solve' },
+      { k: 'whatibuild.tag', label: 'eyebrow', def: '04 / what i solve' },
       { k: 'whatibuild.title', label: 'title', def: 'What I Solve' },
       { k: 'whatibuild.sub', label: 'intro', multi: true, def: 'I build production-ready AI image systems for commercial product and lifestyle advertising, product accuracy, compositing, and repeatable workflows.' },
       { k: 'whatibuild.1.title', label: 'card 01, title', def: 'Product Fidelity' },
@@ -155,7 +156,7 @@ export const UI_GROUPS: TextGroup[] = [
     id: 'concept',
     label: 'Home, AI × E-commerce',
     fields: [
-      { k: 'concept.tag', label: 'eyebrow', def: '01 / ai × e-commerce' },
+      { k: 'concept.tag', label: 'eyebrow', def: '03 / ai × e-commerce' },
       { k: 'concept.title', label: 'title', def: 'AI × E-Commerce' },
       { k: 'concept.sub', label: 'intro', multi: true, def: 'The ComfyUI graphs behind the editing work, one reference in, controlled results out: angles, colorways, relight, upscaling. Click any image to inspect.' },
       { k: 'concept.photos.tag', label: 'photoshoot eyebrow', def: 'product photoshoots' },
@@ -167,7 +168,7 @@ export const UI_GROUPS: TextGroup[] = [
     id: 'work',
     label: 'Home, case studies band',
     fields: [
-      { k: 'work.tag', label: 'eyebrow', def: '04 / case studies' },
+      { k: 'work.tag', label: 'eyebrow', def: '05 / case studies' },
       { k: 'work.title', label: 'title', def: 'Case studies' },
       { k: 'work.lane1.title', label: 'lane 1, title', def: 'Concept case studies' },
       { k: 'work.lane1.blurb', label: 'lane 1, blurb', multi: true, def: 'Self-set briefs taken end-to-end, production studies on the commercial imaging system and concept films, all built on the same pipelines as client work.' },
@@ -186,7 +187,7 @@ export const UI_GROUPS: TextGroup[] = [
     id: 'assets',
     label: 'Home, one system (assets)',
     fields: [
-      { k: 'assets.tag', label: 'eyebrow', def: '05 / one system' },
+      { k: 'assets.tag', label: 'eyebrow', def: '06 / one system' },
       { k: 'assets.title', label: 'title', def: 'One Product. Multiple Production-Ready Assets.' },
       { k: 'assets.link', label: 'link text', def: 'how the system is built →' },
       { k: 'assets.sub', label: 'intro', multi: true, def: 'Every asset below left the same pipeline, in the same grade, from the same product lock, hero to social, product page to mobile, each framed for where it ships.' },
@@ -203,7 +204,7 @@ export const UI_GROUPS: TextGroup[] = [
     id: 'showcase',
     label: 'Home, showcase band',
     fields: [
-      { k: 'showcase.tag', label: 'eyebrow', def: '02 / showcase' },
+      { k: 'showcase.tag', label: 'eyebrow', def: '01 / video concepts' },
       { k: 'showcase.title', label: 'title', def: 'Concept ads & personal work' },
       { k: 'showcase.sub', label: 'intro', multi: true, def: 'Spec work, campaign concepts and experiments, AI-made, no client brief required. Click any piece to inspect.' },
       { k: 'showcase.f.all', label: 'filter, all', def: 'All' },
@@ -213,10 +214,19 @@ export const UI_GROUPS: TextGroup[] = [
     ],
   },
   {
+    id: 'character',
+    label: 'Home, character consistency',
+    fields: [
+      { k: 'character.tag', label: 'eyebrow', def: '02 / character consistency' },
+      { k: 'character.title', label: 'title', def: 'Character consistency' },
+      { k: 'character.sub', label: 'intro', multi: true, def: 'The same face from the first frame to the last: character sheets built before a shot, character LoRAs trained in-house, de-aging and conversion workflows that keep the identity intact.' },
+    ],
+  },
+  {
     id: 'capabilities',
     label: 'Home, ai systems',
     fields: [
-      { k: 'cap.tag', label: 'eyebrow', def: '06 / ai systems' },
+      { k: 'cap.tag', label: 'eyebrow', def: '07 / ai systems' },
       { k: 'cap.title', label: 'title', def: 'AI systems I build' },
       { k: 'cap.sub', label: 'intro', multi: true, def: 'Not one-off renders: reusable, documented systems that solve a production problem. Brief goes in, finished frames and films come out, on repeat.' },
       { k: 'cap.1.title', label: 'system 01, title', def: 'Character Consistency Pipeline' },
@@ -246,7 +256,7 @@ export const UI_GROUPS: TextGroup[] = [
     id: 'workflows',
     label: 'Home, workflows',
     fields: [
-      { k: 'wf.tag', label: 'eyebrow', def: '07 / ai production workflow' },
+      { k: 'wf.tag', label: 'eyebrow', def: '08 / ai production workflow' },
       { k: 'wf.title', label: 'title', def: 'AI Production Workflow' },
       { k: 'wf.sub', label: 'intro', multi: true, def: 'A repeatable route, not trial-and-error prompting: references and controls go in, commercial frames come out, and the same route reruns for the next product, room or format.' },
       { k: 'wf.routeLabel', label: 'route, card label', def: 'the route' },
@@ -274,7 +284,7 @@ export const UI_GROUPS: TextGroup[] = [
     id: 'craft',
     label: 'Home, craft',
     fields: [
-      { k: 'craft.tag', label: 'eyebrow', def: '08 / craft' },
+      { k: 'craft.tag', label: 'eyebrow', def: '09 / craft' },
       { k: 'craft.title', label: 'title', def: 'Where AI Meets Image Craft' },
       { k: 'craft.sub', label: 'intro', multi: true, def: 'A model gets you close. These are the controls that make the output a commercial deliverable.' },
       { k: 'craft.p1.term', label: 'row 1, term', def: 'Product Fidelity' },
@@ -295,7 +305,7 @@ export const UI_GROUPS: TextGroup[] = [
     id: 'brandssec',
     label: 'Home, brands strip',
     fields: [
-      { k: 'brandssec.tag', label: 'eyebrow', def: '09 / brands' },
+      { k: 'brandssec.tag', label: 'eyebrow', def: '10 / brands' },
       { k: 'brandssec.title', label: 'title', def: "21 brands I've worked within Ogilvy" },
       { k: 'brandssec.sub', label: 'intro, {n} = brand count', multi: true, def: 'Click a logo with media for the stills, animatics and final films. {n} brands and counting.' },
     ],
@@ -304,7 +314,7 @@ export const UI_GROUPS: TextGroup[] = [
     id: 'about',
     label: 'Home, about',
     fields: [
-      { k: 'about.tag', label: 'eyebrow', def: '10 / about' },
+      { k: 'about.tag', label: 'eyebrow', def: '11 / about' },
       { k: 'about.title1', label: 'title line 1', def: 'The operator' },
       { k: 'about.title2', label: 'title line 2', def: 'behind the graph' },
       { k: 'about.p1', label: 'paragraph 1', multi: true, def: 'I work at the intersection of creative direction, AI image generation and production workflows. My work focuses on using generative AI to create controlled, photorealistic visual assets for commercial applications, real products placed into generated environments without losing fidelity, edited and composited to a deliverable.' },
@@ -342,7 +352,7 @@ export const UI_GROUPS: TextGroup[] = [
     id: 'contact',
     label: 'Home, contact band',
     fields: [
-      { k: 'contact.tag', label: 'eyebrow', def: '11 / contact' },
+      { k: 'contact.tag', label: 'eyebrow', def: '12 / contact' },
       { k: 'contact.title', label: 'title', def: 'Let’s build the next visual system.' },
       { k: 'contact.sub', label: 'intro', multi: true, def: 'Available for AI image generation, product visualization, commercial creative and AI production workflow projects.' },
       { k: 'contact.email', label: 'email button', def: 'email me' },
@@ -485,8 +495,9 @@ export const HOME_SECTIONS: { k: string; label: string }[] = [
   { k: 'hero', label: 'Hero' },
   { k: 'pipeline', label: 'Production pipeline strip' },
   { k: 'marquee', label: 'Brand logo ticker' },
-  { k: 'concept-images', label: 'Concept images' },
   { k: 'showcase', label: 'Showcase' },
+  { k: 'character', label: 'Character consistency' },
+  { k: 'concept-images', label: 'Concept images' },
   { k: 'whatibuild', label: 'What I solve' },
   { k: 'workgrid', label: 'Case studies (work grid)' },
   { k: 'assets', label: 'One system, assets' },

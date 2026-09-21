@@ -41,12 +41,6 @@
       "caption": "Lighting control, relight, same product · qwen edit 2511 + lighting LoRA"
     },
     {
-      "id": "c_mu941iuy5hsg6",
-      "kind": "image",
-      "src": "media/concept/workflow_character_sheet_hd.png",
-      "caption": "Character sheet, one persona, every frame · qwen edit 2511"
-    },
-    {
       "id": "c_mu989jdonyh8p",
       "kind": "image",
       "src": "media/concept/workflow_flux2_klein_upscale_ttp_hd.png",
@@ -57,12 +51,6 @@
       "kind": "image",
       "src": "media/concept/workflow_flux2_klein_upscale_4k_hd.png",
       "caption": "Upscale to 4K, low-res in, production out · flux.2 klein TTP"
-    },
-    {
-      "id": "c_mu9ve4jlsp5jn",
-      "kind": "image",
-      "src": "media/concept/workflow_product_to_person_hd.png",
-      "caption": "Product to person, same shoes onto the woman character · flux.2 klein edit"
     },
     {
       "id": "c_mu9xnisrd035z",

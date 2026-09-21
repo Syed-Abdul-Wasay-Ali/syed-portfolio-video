@@ -5,11 +5,13 @@ import ThemeSelect from './ThemeSelect'
 import { LINKEDIN_URL, GITHUB_URL, RESUME_URL } from '../data/social'
 import { useRuntime, useT } from '../data/runtime'
 
-// Nav order mirrors the home page section order (AI × E-commerce band first, brands last).
+// Nav order mirrors the home page section order (video concepts first, character
+// consistency next, brands last).
 // `section` maps to the home section key used by the admin's section manager.
 const LINKS = [
-  { href: '#concept-images', section: 'concept-images', labelKey: 'nav.concepts', label: 'Editing' },
   { href: '#showcase', section: 'showcase', labelKey: 'nav.showcase', label: 'Showcase' },
+  { href: '#character', section: 'character', labelKey: 'nav.character', label: 'Character' },
+  { href: '#concept-images', section: 'concept-images', labelKey: 'nav.concepts', label: 'Editing' },
   { href: '#work', section: 'workgrid', labelKey: 'nav.work', label: 'Work' },
   { href: '#capabilities', section: 'capabilities', labelKey: 'nav.systems', label: 'Systems' },
   { href: '#workflows', section: 'workflows', labelKey: 'nav.workflows', label: 'Workflows' },

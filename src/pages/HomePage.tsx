@@ -7,6 +7,7 @@ import WorkGrid from '../components/WorkGrid'
 import AssetFamily from '../components/AssetFamily'
 import ShowcaseSection from '../components/ShowcaseSection'
 import ConceptImagesSection from '../components/ConceptImagesSection'
+import CharacterSection from '../components/CharacterSection'
 import Capabilities from '../components/Capabilities'
 import WorkflowsSection from '../components/WorkflowsSection'
 import CraftSection from '../components/CraftSection'
@@ -17,9 +18,10 @@ import { useBrandListOV } from '../data/overrides'
 import { brandHasContent } from '../data/brands'
 import type { ReactNode } from 'react'
 
-// Home order (default): hero → the production pipeline strip → logo ticker →
-// what-i-solve → showcase → concept images → case studies → one product / many
-// assets → systems → workflow + stack → craft → brands → about → contact.
+// Home order (video-first build): hero → the production pipeline strip → logo
+// ticker → video concepts (showcase) → character consistency → AI × e-commerce
+// concept images → what-i-solve → case studies → one product / many assets →
+// systems → workflow + stack → craft → brands → about → contact.
 //
 // The admin "sections" tab controls visibility AND order: when
 // content.sectionOrder.home exists it is authoritative (only listed sections
@@ -53,8 +55,9 @@ export default function HomePage() {
         />
       ),
     },
-    { k: 'concept-images', node: <ConceptImagesSection key="concept-images" /> },
     { k: 'showcase', node: <ShowcaseSection key="showcase" /> },
+    { k: 'character', node: <CharacterSection key="character" /> },
+    { k: 'concept-images', node: <ConceptImagesSection key="concept-images" /> },
     { k: 'whatibuild', node: <WhatIBuild key="whatibuild" /> },
     { k: 'workgrid', node: <WorkGrid key="workgrid" /> },
     { k: 'assets', node: <AssetFamily key="assets" /> },

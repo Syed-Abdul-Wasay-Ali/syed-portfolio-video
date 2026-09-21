@@ -28,7 +28,7 @@ const CONTENT = path.join(ROOT, 'public', 'content.json')
 const CACHE = path.join(ROOT, 'node_modules', '.cache', 'ats')
 const START = '<!--ATS-TEXT-START-->'
 const END = '<!--ATS-TEXT-END-->'
-const SITE_URL = 'https://syed-abdul-wasay-ali.github.io/syed-portfolio/'
+const SITE_URL = 'https://syed-abdul-wasay-ali.github.io/syed-portfolio-video/'
 
 const esc = (s) =>
   String(s ?? '')
@@ -44,7 +44,7 @@ const TSOUT = path.join(CACHE, 'ts')
 fs.rmSync(TSOUT, { recursive: true, force: true })
 fs.mkdirSync(TSOUT, { recursive: true })
 const tscBin = path.join(ROOT, 'node_modules', 'typescript', 'bin', 'tsc')
-const dataFiles = ['projects.ts', 'showcase.ts', 'brands.ts', 'workflows.ts', 'text.ts', 'social.ts'].map((f) =>
+const dataFiles = ['projects.ts', 'showcase.ts', 'brands.ts', 'workflows.ts', 'text.ts', 'social.ts', 'character.ts'].map((f) =>
   path.join('src', 'data', f)
 )
 const tsc = spawnSync(
@@ -73,14 +73,15 @@ if (tsc.status !== 0) {
   process.exit(1)
 }
 const mod = (n) => import(pathToFileURL(path.join(TSOUT, n)).href)
-const [P, SH, BR, WF, TX, SOC] = await Promise.all(
-  ['projects.js', 'showcase.js', 'brands.js', 'workflows.js', 'text.js', 'social.js'].map(mod)
+const [P, SH, BR, WF, TX, SOC, CH] = await Promise.all(
+  ['projects.js', 'showcase.js', 'brands.js', 'workflows.js', 'text.js', 'social.js', 'character.js'].map(mod)
 )
 const D = {
   projectsByDate: P.projectsByDate,
   SHOWCASE: SH.SHOWCASE,
   BRANDS: BR.BRANDS,
   WORKFLOWS: WF.WORKFLOWS,
+  CHARACTER: CH.CHARACTER,
   DEF: TX.DEF,
   DEF_LIST: TX.DEF_LIST,
   EMAIL: SOC.EMAIL,
@@ -232,6 +233,14 @@ if (mainCaps.length || photoCaps.length) {
     p('<h3>AI Product Photoshoot Images</h3>')
     p(`<ul>${photoCaps.map((c) => `<li>${esc(c.caption)}</li>`).join('')}</ul>`)
   }
+}
+
+// character consistency (home band), static list
+if (D.CHARACTER.length) {
+  p(`<h2>${esc(T('character.title'))}</h2>`)
+  p(`<p>${esc(T('character.sub'))}</p><ul>`)
+  for (const it of D.CHARACTER) if (it.caption) p(`<li>${esc(it.caption)}</li>`)
+  p('</ul>')
 }
 
 // showcase
